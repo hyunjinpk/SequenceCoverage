@@ -13,9 +13,9 @@ normalization_med_ratio.py    i) normalizes the depths of coverage, females with
 
 avg_cov.py    plots avg.depth of coverage of a scaffold vs. length of the scaffold (See avg_cov.png)
 
-length_ratio.py    plots the male-over-female ratio of coverage (see normalization_med_ratio.py) vs. length of the scaffold
+length_ratio.py    plots the male-over-female ratio of coverage (see normalization_med_ratio.py) vs. length of the scaffold (See length_ratio.png)
 
-vcf_table.py    calculates statistics for heterozygous and homozygous SNPs from FreeBayes-generated, vcffilter-filtered vcf file
+vcf_table.py    calculates statistics for heterozygous and homozygous SNPs from FreeBayes-generated, vcffilter-filtered vcf file (See vcf_table.png)
 
 tab_delimit.py    converts a space-delimited file to a tab-delimited file
 
