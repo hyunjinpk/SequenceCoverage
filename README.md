@@ -31,5 +31,5 @@ FreeBayes v.1.2.0.
 
 Contacts: 
 For the author of above scripts, contact Hyunjin Park (hyunjin.park@utexas.edu).
-For the first author of the paper, contact Dr. Yiyuan Li (yli@utexas.edu).
+For the primary author of the paper, contact Dr. Yiyuan Li (yli@utexas.edu).
 For the PI of the project, contact Dr. Nancy Moran (nancy.moran@austin.utexas.edu).
