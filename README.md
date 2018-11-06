@@ -9,9 +9,9 @@ stdev.py    calculates the mean and standard deviations of depths of coverage of
 
 region.py    eliminates the regions whose depths of converage are 2 SDs or more away from the mean
 
-normalization_med_ratio.py    i) normalises the depths of coverage, females with AL4f and males with AL4mw-B; ii) calculates post-normalisation median coverages for males and females; iii) calculates median(males) / median(females) for each interval; iv) plots the ratios (see normalization_med_ratio.png)
+normalization_med_ratio.py    i) normalizes the depths of coverage, females with AL4f and males with AL4mw-B; ii) calculates post-normalisation median coverages for males and females; iii) calculates median(males) / median(females) for each interval; iv) plots the ratios (See normalization_med_ratio.png)
 
-avg_cov.py    plots avg.depth of coverage of a scaffold vs. length of the scaffold
+avg_cov.py    plots avg.depth of coverage of a scaffold vs. length of the scaffold (See avg_cov.png)
 
 length_ratio.py    plots the male-over-female ratio of coverage (see normalization_med_ratio.py) vs. length of the scaffold
 
