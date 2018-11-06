@@ -22,14 +22,14 @@ tab_delimit.py    converts a space-delimited file to a tab-delimited file
 SNP_individual.py    extracts heterozygous SNPs of the given individual and saves the information as a BED-format file
 
 Tools used:
-Python 3 v.3.6.5
-Matplotlib v.3.0.0
-Bedtools v.2.26.0
-Samtools v.0.1.19.96b5f2294a
-Bcftools v.0.1.19.96b5f2294a
-FreeBayes v.1.2.0
+Python 3 v.3.6.5.
+Matplotlib v.3.0.0.
+Bedtools v.2.26.0.
+Samtools v.0.1.19.96b5f2294a.
+Bcftools v.0.1.19.96b5f2294a.
+FreeBayes v.1.2.0.
 
 Contacts: 
-For the author of above scripts, contact Hyunjin Park (hyunjin.park@utexas.edu)
-For the first author of the paper, contact Dr. Yiyuan Li (yli@utexas.edu)
-For the PI of the project, contact Dr. Nancy Moran (nancy.moran@austin.utexas.edu)
+For the author of above scripts, contact Hyunjin Park (hyunjin.park@utexas.edu).
+For the first author of the paper, contact Dr. Yiyuan Li (yli@utexas.edu).
+For the PI of the project, contact Dr. Nancy Moran (nancy.moran@austin.utexas.edu).
