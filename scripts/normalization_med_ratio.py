@@ -9,7 +9,8 @@ def main():
 
 	for line in infile:
 		if "Scaffold_21967;HRSCAF=25451" in line or "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line:
-		#or "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line or "Scaffold_21773;HRSCAF=24826" in line:
+		# X chromosome: "Scaffold_21773;HRSCAF=24826" in line:
+		# Autosomes: "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line or "Scaffold_21773;HRSCAF=24826" in line:
 			line = line.strip()
 			line = line.split("\t")
 
@@ -38,13 +39,20 @@ def main():
 
 	# Draw histogram with matplotlib
 	print(statistics.mean(ratio_list), statistics.stdev(ratio_list))
-	plt.hist(ratio_list, density=1, bins=200)
-	plt.axis([0, 2, 0, max(ratio_list)+10])
+	f = plt.figure()
+	plt.hist(ratio_list, density=1, bins=1000)
+	plt.axis([0, 2, 0, 10])
+	plt.title("Autosomes")
 	plt.xlabel("Ratio of Coverage (Male/Female)")
 	plt.ylabel("Frequency")
 	plt.show()
+
+	# How to save figure in PDF format: https://stackoverflow.com/questions/11328958/save-the-plots-into-a-pdf
+	f.savefig("foo_auto.pdf", bbox_inches = "tight")
 
 	infile.close()
 
 if __name__ == "__main__":
 	main()
+
+	
