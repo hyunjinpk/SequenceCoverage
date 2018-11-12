@@ -8,7 +8,9 @@ def main():
 	ratio_list = []
 
 	for line in infile:
-		if "Scaffold_21967;HRSCAF=25451" in line or "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line:
+		if "Scaffold_21646;HRSCAF=24477" in line:
+		#"Scaffold_21967;HRSCAF=25451" in line or "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line:
+		#or "Scaffold_21773;HRSCAF=24826" in line:
 		# X chromosome: "Scaffold_21773;HRSCAF=24826" in line:
 		# Autosomes: "Scaffold_21646;HRSCAF=24477" in line or "Scaffold_20849;HRSCAF=22316" in line or "Scaffold_21773;HRSCAF=24826" in line:
 			line = line.strip()
@@ -40,19 +42,18 @@ def main():
 	# Draw histogram with matplotlib
 	print(statistics.mean(ratio_list), statistics.stdev(ratio_list))
 	f = plt.figure()
-	plt.hist(ratio_list, density=1, bins=1000)
-	plt.axis([0, 2, 0, 10])
-	plt.title("Autosomes")
-	plt.xlabel("Ratio of Coverage (Male/Female)")
-	plt.ylabel("Frequency")
+	plt.hist(ratio_list, density=False, bins=1500)
+	plt.axis([0.25, 1.75, 0, 2500])
+	plt.title("Chromosome 3")
+	plt.xlabel("Ratio of Coverage (Male/Female) (bin size = 0.01)")
+	plt.ylabel("Count")
 	plt.show()
 
 	# How to save figure in PDF format: https://stackoverflow.com/questions/11328958/save-the-plots-into-a-pdf
-	f.savefig("foo_auto.pdf", bbox_inches = "tight")
+	f.savefig("foo_3.pdf", bbox_inches = "tight")
 
 	infile.close()
 
 if __name__ == "__main__":
 	main()
 
-	
